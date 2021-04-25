@@ -11,21 +11,11 @@
   console.log(data.then((x) => console.log(x)));
 </script>
 
-<div>
-  {#await data then value}
-    <p>{value.version}</p>
-    <p>
-      <a href={value.url} download="smart">Download</a>
-    </p>
-  {/await}
-</div>
+{#await data then value}
+  <a class="navbar__signup" href={value.url} download="smart"
+    >Download {value.version}</a
+  >
+{/await}
 
 <style>
-  div {
-    display: flex;
-  }
-
-  p {
-    margin-right: 1rem;
-  }
 </style>

@@ -1,0 +1,10 @@
+@use '../../../../smart/src/scss/base';
+@use '../../../../smart/src/scss/layout';
+@use '../../../../smart/src/scss/components';
+@use '../../../../smart/src/scss/pages/content';
+@use '../../../../smart/src/scss/pages/post';
+@use '../../../../smart/src/scss/vendors/medium-zoom';
+
+table {
+  margin: 1rem 0;
+}
